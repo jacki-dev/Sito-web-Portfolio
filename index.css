@@ -1,0 +1,174 @@
+/* Corpo della pagina */
+body {
+    margin: 0;
+    padding: 0;
+    background: url(BAckground_img.webp) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Impostiamo l'altezza del corpo per adattarsi alla pagina intera */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Posiziona il contenuto in alto */
+    align-items: center; /* Centra orizzontalmente */
+    color: #333; /* Colore del testo */
+}
+
+/* Box semi-trasparenti */
+.box {
+    background-color: rgba(2, 204, 204, 0.712); /* Sfondo semi-trasparente */
+    color: white; /* Colore del testo all'interno della box */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* Rende gli angoli della box arrotondati */
+    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Aggiunge un'ombra alla box */
+    max-width: 80%; /* Imposta una larghezza massima relativa al contenitore */
+    width: 600px; /* Imposta una larghezza fissa come fallback */
+    text-align: justify; /* Giustifica il testo */
+    margin-left: auto;
+    margin-right: auto; /* Centra la box orizzontalmente */
+    line-height: 1.6; /* Aumenta la spaziatura tra le righe per una migliore leggibilità */
+}
+
+/* Sezione del portfolio */
+#portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Consente di avere più box a seconda delle dimensioni dello schermo */
+    gap: 30px; /* Spaziatura tra i box */
+    padding: 20px;
+}
+#portfolio h1 {
+    text-align: center;
+}
+#portfolio ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Distanza tra i box */
+}
+/* Stile per le intestazioni */
+h1, h2, h3 {
+    color: #fff; /* Colore bianco per i titoli */
+    margin: 10px 0;
+}
+
+/* Link dentro le box */
+a {
+    color: #ffffff; /* Colore bianco per i link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Sottolinea il link quando è selezionato */
+}
+
+/* Stile per il footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%; /* Occupa tutta la larghezza */
+}
+
+/* Stile per la navigazione */
+nav {
+    margin-top: -50px; /* Avvicina la nav al testo superiore */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Distanza tra i link */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Stile per la sezione "Su di me" */
+#su_di_me.box {
+    background-color: rgba(2, 204, 204, 0.712); /* Sfondo semi-trasparente */
+    color: white; /* Colore del testo all'interno della box */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* Rende gli angoli della box arrotondati */
+    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Aggiunge un'ombra alla box */
+    max-width: 90%; /* Imposta una larghezza massima relativa al contenitore */
+    width: 600px; /* Imposta una larghezza fissa come fallback */
+    text-align: justify; /* Giustifica il contenuto */
+    line-height: 1.6; /* Aumenta la spaziatura tra le righe per una migliore leggibilità */
+}
+/* Intestazione principale del portfolio */
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Titolo del portfolio */
+#portfolio h1 {
+    margin: 10px 0;
+}
+
+/* Bottone di reindirizzamento (link) */
+#portfolio .links a {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#portfolio .links a:hover {
+    background-color: #004999;
+}
+.box:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.8); /* Aumenta l'ombra per dare l'effetto di illuminazione */
+    transform: translateY(-10px); /* Aggiungi un leggero sollevamento della box */
+}
+
+/* Stile responsivo per schermi piccoli */
+@media screen and (max-width: 768px) {
+    .box {
+        width: 90%; /* La larghezza delle box sarà il 90% dello schermo */
+        padding: 15px; /* Riduci il padding */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem; /* Riduci la dimensione dei titoli */
+    }
+
+    footer {
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: row; /* Assicura che i link siano in orizzontale */
+        gap: 5px; /* Distanza tra i link */
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
